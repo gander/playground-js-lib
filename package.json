@@ -1,0 +1,13 @@
+{
+  "name": "@gander/playground",
+  "version": "0.1.0",
+  "license": "MIT",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
