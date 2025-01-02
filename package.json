@@ -4,7 +4,7 @@
   "license": "MIT",
   "module": "index.ts",
   "exports": "./mod.ts",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@types/bun": "^1.1.14"
   },
