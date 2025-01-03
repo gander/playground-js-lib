@@ -6,8 +6,6 @@
   "exports": "./mod.ts",
   "type": "commonjs",
   "files": [
-    "LICENSE",
-    "README.md",
     "index.ts"
   ],
   "devDependencies": {
@@ -28,6 +26,15 @@
   "peerDependencies": {
     "@vue/reactivity": "^3.0.0",
     "typescript": "~5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepack": "eslint && vitest --run && tsc && pkgroll --clean-dist --sourcemap --minify && publint",
+    "release": "release-it --only-version",
+    "lint": "eslint",
+    "test": "vitest"
   },
   "description": "To install dependencies:",
   "main": "index.ts",
