@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gander/playground.git"
+    "url": "git+https://github.com/gander/jsr-playground.git"
   },
   "author": "gander",
   "bugs": {
-    "url": "https://github.com/gander/playground/issues"
+    "url": "https://github.com/gander/jsr-playground/issues"
   },
-  "homepage": "https://github.com/gander/playground#readme"
+  "homepage": "https://github.com/gander/jsr-playground#readme"
 }
