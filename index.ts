@@ -1,4 +1,4 @@
-import {computed, Ref} from '@vue/reactivity';
+import {computed, type Ref} from '@vue/reactivity';
 
 export function add(a: number, b: number): number {
     return a + b;
