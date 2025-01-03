@@ -1,4 +1,4 @@
-name: Publish to NPM
+name: Publish
 on:
     push:
         branches:
@@ -27,3 +27,24 @@ jobs:
             -   run: npm publish --provenance --access public
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    publish-to-jsr:
+        runs-on: ubuntu-latest
+
+        permissions:
+            contents: read
+            id-token: write
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Install deno
+              uses: denoland/setup-deno@v2
+              with:
+                  deno-version: v2.x
+
+            - name: Install dependencies
+              run: deno install --no-lock --allow-scripts
+
+            - name: Publish package
+              run: deno publish
