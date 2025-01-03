@@ -2,11 +2,22 @@
   "name": "@gander/playground",
   "version": "0.3.3",
   "license": "MIT",
-  "module": "index.ts",
-  "exports": "./mod.ts",
   "type": "commonjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
   "files": [
-    "index.ts"
+    "dist"
   ],
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -35,7 +46,6 @@
     "lint": "eslint"
   },
   "description": "To install dependencies:",
-  "main": "index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gander/jsr-playground.git"
