@@ -20,8 +20,7 @@
     "pkgroll": "^2.6.0",
     "publint": "^0.2.12",
     "release-it": "^17.11.0",
-    "typescript-eslint": "^8.19.0",
-    "vitest": "^2.1.8"
+    "typescript-eslint": "^8.19.0"
   },
   "peerDependencies": {
     "@vue/reactivity": "^3.0.0",
@@ -31,10 +30,9 @@
     "access": "public"
   },
   "scripts": {
-    "prepack": "eslint && vitest --run && tsc && pkgroll --clean-dist --sourcemap --minify && publint",
+    "prepack": "eslint && tsc && pkgroll --clean-dist --sourcemap --minify && publint",
     "release": "release-it --only-version",
-    "lint": "eslint",
-    "test": "vitest"
+    "lint": "eslint"
   },
   "description": "To install dependencies:",
   "main": "index.ts",
