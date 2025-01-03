@@ -6,7 +6,9 @@
   "exports": "./mod.ts",
   "type": "commonjs",
   "devDependencies": {
-    "@types/bun": "^1.1.14"
+    "@types/bun": "^1.1.14",
+    "typescript": "^5.4.0",
+    "@vue/reactivity": "^3.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.4.0",
