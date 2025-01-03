@@ -7,8 +7,8 @@ export default {
         tag: true,
         push: true,
     },
-    github: {
-        release: true,
+    npm: {
+        publish: false
     },
     hooks: {
         'before:init': 'bun run prepack',
