@@ -5,6 +5,11 @@
   "module": "index.ts",
   "exports": "./mod.ts",
   "type": "commonjs",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.ts"
+  ],
   "devDependencies": {
     "@types/bun": "^1.1.14",
     "@vue/reactivity": "^3.0.0"
