@@ -29,6 +29,8 @@ jobs:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     publish-to-jsr:
+        needs: publish-to-npm
+
         runs-on: ubuntu-latest
 
         permissions:
