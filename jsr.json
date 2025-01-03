@@ -8,8 +8,6 @@
     },
     "publish": {
         "include": [
-            "LICENSE",
-            "README.md",
             "src/index.ts"
         ]
     }
