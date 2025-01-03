@@ -17,6 +17,8 @@
     }
   },
   "files": [
+    "LICENSE",
+    "README.md",
     "dist"
   ],
   "devDependencies": {
