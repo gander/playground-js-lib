@@ -12,7 +12,7 @@
   ],
   "devDependencies": {
     "@types/bun": "^1.1.14",
-    "@vue/reactivity": "^3.0.0"
+    "@vue/reactivity": "^3.1.0"
   },
   "peerDependencies": {
     "typescript": "^5.4.0",
