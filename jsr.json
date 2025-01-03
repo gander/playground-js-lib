@@ -1,6 +1,6 @@
 {
     "name": "@gander/playground",
-    "version": "0.1.2",
+    "version": "0.3.0",
     "license": "MIT",
     "exports": "./index.ts",
     "tasks": {
