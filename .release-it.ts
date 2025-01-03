@@ -10,9 +10,6 @@ export default {
     github: {
         release: true,
     },
-    npm: {
-        publish: true,
-    },
     hooks: {
         'before:init': 'bun run prepack',
     },
