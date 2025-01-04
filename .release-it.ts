@@ -11,6 +11,10 @@ export default {
         tagArgs: ['-s'],
         push: true,
     },
+    github: {
+        release: true,
+        releaseName: 'v${version}',
+    },
     npm: {
         publish: false,
     },
