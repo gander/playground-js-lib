@@ -13,6 +13,6 @@ jobs:
 
             -   uses: oven-sh/setup-bun@v2
 
-            -   run: bun install --frozen-lockfile
+            -   run: bun install
 
             -   run: bunx pkg-pr-new publish
