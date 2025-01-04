@@ -1,5 +1,11 @@
-name: Publish Any Commit
-on: [ push, pull_request ]
+name: pkg.pr.new
+on:
+    pull_request:
+    push:
+        branches:
+            - "**"
+        tags:
+            - "!**"
 
 jobs:
     build:
