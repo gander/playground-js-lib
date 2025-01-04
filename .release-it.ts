@@ -2,13 +2,17 @@ import type {Config} from 'release-it';
 
 export default {
     git: {
+        requireBranch: 'master',
         commit: true,
+        commitMessage: 'chore: release v${version}',
         commitArgs: ['-S'],
         tag: true,
+        tagName: 'v${version}',
+        tagArgs: ['-s'],
         push: true,
     },
     npm: {
-        publish: false
+        publish: false,
     },
     hooks: {
         'before:init': 'bun run prepack',
