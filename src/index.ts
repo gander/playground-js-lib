@@ -19,7 +19,7 @@ export function add(a: number, b: number): number {
  *
  * const result = addRef(partA, partB);
  *
- * console.log(result.value);
+ * console.log('Result', result.value);
  * ```
  */
 export function addRef(a: Ref<number>, b: Ref<number>): Ref<number> {
