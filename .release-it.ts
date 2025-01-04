@@ -15,8 +15,8 @@ export default {
         release: true,
         releaseName: 'v${version}',
         comments: {
-            submit: true
-        }
+            submit: true,
+        },
     },
     npm: {
         publish: false,

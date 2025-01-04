@@ -25,6 +25,6 @@ export function add(a: number, b: number): number {
  * ```
  */
 export function addRef(a: Ref<number>, b: Ref<number>): Ref<number> {
-    return computed(() => a.value + b.value)
+    return computed(() => a.value + b.value);
 }
 
