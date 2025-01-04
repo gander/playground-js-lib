@@ -26,6 +26,3 @@ export function addRef(a: Ref<number>, b: Ref<number>): Ref<number> {
     return computed(() => a.value + b.value)
 }
 
-/** Outputs example of sum */
-console.log('Add 2 + 3 =', add(2, 3));
-
