@@ -14,6 +14,7 @@ export default {
     github: {
         release: true,
         releaseName: 'v${version}',
+        draft: true
     },
     npm: {
         publish: false,
