@@ -43,7 +43,7 @@
         "access": "public"
     },
     "scripts": {
-        "prepack": "eslint && tsc && pkgroll --clean-dist --sourcemap --minify && publint",
+        "prepack": "eslint && tsc && pkgroll --clean-dist --sourcemap --minify && publint --strict",
         "release": "release-it --only-version",
         "lint": "eslint"
     },
